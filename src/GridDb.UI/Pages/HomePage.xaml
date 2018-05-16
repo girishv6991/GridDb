@@ -5,14 +5,18 @@
     xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
     xmlns:mvx="clr-namespace:MvvmCross.Forms.Bindings;assembly=MvvmCross.Forms"
     xmlns:local="clr-namespace:GridDb.UI.Pages"
+                      xmlns:syncfusion="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms" 
     x:Class="GridDb.UI.Pages.HomePage"
     xmlns:viewModels="clr-namespace:GridDb.Core.ViewModels.Home;assembly=MvxForms.Core"
                       Title="Main page">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome!!&#10;App scaffolded with MvxScaffolding"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <syncfusion:SfDataGrid ItemsSource="{Binding DemoCollection}" AutoGenerateColumns="False">
+                <syncfusion:SfDataGrid.Columns>
+                    <syncfusion:GridTextColumn HeaderText="Name" MappingName="Name" AllowEditing="True" />
+                    <syncfusion:GridNumericColumn HeaderText="Price" MappingName="Price" AllowEditing="True" />
+                </syncfusion:SfDataGrid.Columns>
+            </syncfusion:SfDataGrid>
         </StackLayout>
     </ContentPage.Content>
 </views:MvxContentPage>

@@ -94,6 +94,15 @@
     <PackageReference Include="MvvmCross.Forms">
       <Version>6.0.1</Version>
     </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfDataGrid">
+      <Version>16.1.0.37</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfNumericTextBox">
+      <Version>16.1.0.37</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfNumericTextBox.Android">
+      <Version>16.1.0.37</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Android.Support.Annotations">
       <Version>27.0.2</Version>
     </PackageReference>
